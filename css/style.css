@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body{
+     font-family: 'Segoe UI', sans-serif;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+li{
+    list-style: none;
+}
+.d-flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+}
+.text-center{
+    text-align: center;
+}
+/* header */
+header{
+    background-color: black;}
+.logo a{
+    color: #1ad209; 
+ background-image: linear-gradient(270deg, #E8E5AE , #cb41fd 50%, #cd274e 100%); 
+    border-radius: 2px  12px 2px 12px;
+    font-size: 50px;
+    font-weight: 600;
+}
+nav ul li a{
+    color: white;
+    margin: 0 20px;
+    padding: 35px 0;
+}
+.header-btn a{
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color:blue;
+  cursor: pointer;
+}
+
+/* dropdown css  */
+.dropdown-menu{
+    background-color: orange;
+    top: 100%;
+    left: 0;
+    width: 120px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    transform: translateY(30px);
+}
+.dropdown-menu ul li a{
+    padding: 15px 0;
+    color: black;
+}
+.dropdown:hover .dropdown-menu{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+/* section2 */
+
+.top-nav {
+    background-color: #f8f3f3;
+
+  border-bottom: 2px solid #eee;
+  padding: 10px 30px;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #4a3aff;
+}
+
+.search-icon i {
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s;
+  margin-left:150px;
+  color: orange;
+}
+
+.search-icon i:hover {
+  color: #4a3aff;
+}
+
+/* section3 */
+
+.promo {
+  width: 100%;
+  min-height:600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c1f2c;
+  padding: 50px 20px;
+}
+
+.promo-container {
+  max-width: 1100px;
+  width: 100%;
+   flex-wrap: wrap;
+     gap: 40px;
+}
+
+.promo-image img {
+  width: 100%;
+  width:600px;
+  object-fit: contain;
+  animation: float 3s ease-in-out infinite;
+}
+
+
+
+.promo-content {
+  max-width: 500px;
+}
+
+.promo-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.promo-content h2 span {
+  display: block;
+  font-size: 2.2rem;
+  color: white;
+}
+
+.promo-content p {
+  margin: 15px 0 25px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 2px solid #6c63ff;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #6c63ff;
+  color: #fff;
+}
+
+/* shoes section */
+
+
+.shoe-section {
+  max-width: 1100px;
+  margin: auto;
+
+}
+
+.section-heading h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 30px;
+}
+
+.section-heading p {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.shoe-care {
+   gap: 30px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.shoe-card {
+
+  padding: 20px 15px;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  
+  width: 200px;
+}
+
+.shoe-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  object-fit: contain;
+}
+
+.shoe-card h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.shoe-card p {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.shoe-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2d2dfb;
+}
+
+.arrow {
+  font-size: 24px;
+  color: #2d2dfb;
+  cursor: pointer;
+  user-select: none;
+}
+
+.footer-note {
+  margin-top: 30px;
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* footer */
+.footer {
+  background-color: #000;
+  padding: 20px 30px;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-left p {
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.footer-center a {
+  color: #fff;
+  margin: 0 8px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.footer-center a:hover {
+  color: #888;
+}
+
+.footer-right a {
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
